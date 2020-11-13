@@ -11,5 +11,11 @@ min(A)
 # The area in the density is always equal to 1
 # The density histogram allows us to identify the family distribution
 
-# Loading datasets
-H1 <- hist(data1.txt, freq = FALSE)
+# Creating a dataset with normal distribution
+B = rnorm(1000)
+hist(B, freq = FALSE)
+
+# Creating a dataset with exponential distribution
+C = rexp(1000)
+hist(C, freq = FALSE)
+

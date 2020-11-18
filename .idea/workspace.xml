@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0eeda32d-3e28-4e7c-a8ab-ab059f9f4185" name="Default Changelist" comment="First commit">
-      <change beforePath="$PROJECT_DIR$/.idea/rGraphicsSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rGraphicsSettings.xml" afterDir="false" />
+    <list default="true" id="0eeda32d-3e28-4e7c-a8ab-ab059f9f4185" name="Default Changelist" comment="More examples with other distributions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.R" beforeDir="false" afterPath="$PROJECT_DIR$/main.R" afterDir="false" />
     </list>
@@ -61,7 +60,10 @@
       <workItem from="1605142779031" duration="335000" />
       <workItem from="1605143243495" duration="1066000" />
       <workItem from="1605233487698" duration="1386000" />
-      <workItem from="1605237929926" duration="4316000" />
+      <workItem from="1605237929926" duration="5100000" />
+      <workItem from="1605489624024" duration="2303000" />
+      <workItem from="1605522264825" duration="2540000" />
+      <workItem from="1605658838594" duration="297000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1605240244912</created>
@@ -84,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605240893857</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="More examples with other distributions">
+      <created>1605242879297</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605242879297</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,17 +101,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="More examples with other distributions" />
+    <option name="LAST_COMMIT_MESSAGE" value="More examples with other distributions" />
   </component>
   <component name="WindowStateProjectService">
     <state x="789" y="370" key="SettingsEditor" timestamp="1604543757236">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="789" y="370" key="SettingsEditor/2560.187.1792.1097/0.23.2560.1417@0.23.2560.1417" timestamp="1604543757236" />
-    <state x="765" y="457" key="Vcs.Push.Dialog.v2" timestamp="1605240383683">
+    <state x="765" y="457" key="Vcs.Push.Dialog.v2" timestamp="1605242885164">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state x="765" y="457" key="Vcs.Push.Dialog.v2/2560.187.1792.1097/0.23.2560.1417@0.23.2560.1417" timestamp="1605240383683" />
+    <state x="765" y="457" key="Vcs.Push.Dialog.v2/2560.187.1792.1097/0.23.2560.1417@0.23.2560.1417" timestamp="1605242885164" />
     <state width="1280" height="708" key="XDebugger.FullValuePopup" timestamp="1605237087250">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>

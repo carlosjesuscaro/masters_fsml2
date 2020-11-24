@@ -29,6 +29,29 @@ A = read.table('data1.txt')
 table(A)
 
 # From class problem
-x = seq(-1.5, 0.01)
-fx = 0*(x<0)+x^2/8*(x>=0)*(x<2)+(-x^3/8+x-1)*(x>=2)*(x<4)+1*(x>=4)
+x = seq(-1,5, 0.01)
+fx = 0*(x<0)+x^2/8*(x>=0)*(x<2)+(-x^2/8+x-1)*(x>=2)*(x<4)+1*(x>=4)
+plot(x,fx,type='l',col='red')
 
+u = runif(500000)
+Y = (8*u)^0.5*(u<=0.5)+(4-(8-8*u)^0.5)*(u>1/2)
+min(Y)
+max(Y)
+hist(Y, freq = FALSE, breaks = 50)
+
+qt(0.9,12)
+qt(0.995, 12)
+qt(0.505, 12)
+
+# Class 4
+####################
+mu = 2
+sig2 = 1.7
+n = 500
+alpha = 0.05
+# Creating the 500 observations with the parameters
+A = rnorm(n, mu, sqrt(sig2))
+
+# Computing the confidence interval without assuming that we know mu
+lowerbound = (mean(A) - var(A))/sqrt(n) * qt(1-alpha/2,n-1)
+# This is applying the formula from page 30 (Class 4 - Whiteboard PDF)

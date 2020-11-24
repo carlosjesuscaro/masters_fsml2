@@ -52,6 +52,8 @@ alpha = 0.05
 # Creating the 500 observations with the parameters
 A = rnorm(n, mu, sqrt(sig2))
 
-# Computing the confidence interval without assuming that we know mu
-lowerbound = (mean(A) - var(A))/sqrt(n) * qt(1-alpha/2,n-1)
+# Computing the confidence interval without assuming that we know mu or sigma2
+lowerbound = mean(A) - var(A)/sqrt(n) * qt(1-alpha/2,n-1)
+upperbound = mean(A) + var(A)/sqrt(n) * qt(1-alpha/2,n-1)
+c(lowerbound, upperbound)
 # This is applying the formula from page 30 (Class 4 - Whiteboard PDF)

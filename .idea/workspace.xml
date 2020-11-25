@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0eeda32d-3e28-4e7c-a8ab-ab059f9f4185" name="Default Changelist" comment="Class 2">
+    <list default="true" id="0eeda32d-3e28-4e7c-a8ab-ab059f9f4185" name="Default Changelist" comment="Class 4 - Confidence interval">
       <change beforePath="$PROJECT_DIR$/.idea/rGraphicsSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rGraphicsSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.R" beforeDir="false" afterPath="$PROJECT_DIR$/main.R" afterDir="false" />
@@ -84,7 +84,8 @@
       <workItem from="1605522264825" duration="2540000" />
       <workItem from="1605658838594" duration="2425000" />
       <workItem from="1606103098046" duration="2867000" />
-      <workItem from="1606186416524" duration="793000" />
+      <workItem from="1606186416524" duration="3616000" />
+      <workItem from="1606274549456" duration="3604000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1605240244912</created>
@@ -121,7 +122,21 @@
       <option name="project" value="LOCAL" />
       <updated>1605661182309</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Class 4 - Setting up first exercise">
+      <created>1606187347744</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606187347744</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Class 4 - Confidence interval">
+      <created>1606187718248</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1606187718248</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,17 +158,19 @@
     <MESSAGE value="First commit" />
     <MESSAGE value="More examples with other distributions" />
     <MESSAGE value="Class 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Class 2" />
+    <MESSAGE value="Class 4 - Setting up first exercise" />
+    <MESSAGE value="Class 4 - Confidence interval" />
+    <option name="LAST_COMMIT_MESSAGE" value="Class 4 - Confidence interval" />
   </component>
   <component name="WindowStateProjectService">
     <state x="789" y="370" key="SettingsEditor" timestamp="1604543757236">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="789" y="370" key="SettingsEditor/2560.187.1792.1097/0.23.2560.1417@0.23.2560.1417" timestamp="1604543757236" />
-    <state x="765" y="441" key="Vcs.Push.Dialog.v2" timestamp="1605661187381">
+    <state x="765" y="441" key="Vcs.Push.Dialog.v2" timestamp="1606187695141">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="765" y="441" key="Vcs.Push.Dialog.v2/2560.164.1792.1120/0.0.2560.1440@0.0.2560.1440" timestamp="1605661187381" />
+    <state x="765" y="441" key="Vcs.Push.Dialog.v2/2560.164.1792.1120/0.0.2560.1440@0.0.2560.1440" timestamp="1606187695141" />
     <state x="765" y="457" key="Vcs.Push.Dialog.v2/2560.187.1792.1097/0.23.2560.1417@0.23.2560.1417" timestamp="1605242885164" />
     <state width="1280" height="708" key="XDebugger.FullValuePopup" timestamp="1605237087250">
       <screen x="0" y="23" width="2560" height="1417" />

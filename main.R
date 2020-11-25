@@ -57,3 +57,46 @@ lowerbound = mean(A) - var(A)/sqrt(n) * qt(1-alpha/2,n-1)
 upperbound = mean(A) + var(A)/sqrt(n) * qt(1-alpha/2,n-1)
 c(lowerbound, upperbound)
 # This is applying the formula from page 30 (Class 4 - Whiteboard PDF)
+
+visual <- function(k, n, mu, sig2)
+{
+  M = matrix(data = 0, ncol = 2, nrow = k)
+  for (i in 1:k)
+  {
+    A = rnorm(n, mu, sqrt(sig2))
+    lowerbound = mean(A) - var(A)/sqrt(n) * qt(1-alpha/2,n-1)
+    upperbound = mean(A) + var(A)/sqrt(n) * qt(1-alpha/2,n-1)
+    M[i,1] = lowerbound
+    M[i,2] = upperbound
+  }
+  N = sum((M[,2]<2) + (M[,1]>2))
+  visual = list(interval = M, count = N)
+}
+
+Z = visual(500000, n, mu, sig2)
+Z$count
+
+# Exercise from class 2
+# Matrix with 200 columns and 1,000 rows with data from a Poisson
+# distribution with lambda 5
+Matrix = matrix(data=rpois(200*1000,5),ncol=200)
+
+# Calculating the empirical mean row by row. This means that N is composed of
+# 1,000 observations of lambdahat_(n,2)
+N = apply(Matrix, 1, mean)
+
+# Histogram of N
+H = hist(N, freq = FALSE)
+# The distrigution looks like a Gaussian. This is expected thanks to the
+# Central Limit Theorem
+
+# Values that determine the classes
+limits = H$breaks
+# Smallest limit of classes
+xmin = min(limits)
+# Biggest limit of classes
+xmax = max(limits)
+x = seq(xmin, xmax, 0.01)
+y = dnorm(x, 5, sqrt(5))
+ymax = max(y, H$density)
+hist(N, freq = FALSE, xlim = c(xmin, xmax), ylim = c())

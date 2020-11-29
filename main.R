@@ -105,7 +105,8 @@ xmin = min(limits)
 xmax = max(limits)
 x = seq(xmin, xmax, 0.01)
 # The Variance of X_bar is lambda / n (n is the number of Poisson RV used to
-# calculate the empirical mean)
+# calculate the empirical mean oe the number of observations used to calculate
+# the empirical mean)
 y = dnorm(x, 5, sqrt(5/200))
 ymax = max(y, H$density)
 # Plotting the sample data histogram with a super position of the Gaussian
@@ -113,3 +114,10 @@ ymax = max(y, H$density)
 hist(N, freq = FALSE, xlim = c(xmin, xmax), ylim = c(0, ymax))
 par(new = TRUE)
 plot(x,y,type='l',col='red',xlim = c(xmin, xmax), ylim = c(0, ymax))
+
+########################################################################
+# Calculating confidence intervals for 3 data sets
+# Dataset 1: simu1.txt
+
+# Loading the data
+D1 = read.table('simu1.txt')

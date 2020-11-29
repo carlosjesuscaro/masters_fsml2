@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0eeda32d-3e28-4e7c-a8ab-ab059f9f4185" name="Default Changelist" comment="Updating exercise from class 2">
+    <list default="true" id="0eeda32d-3e28-4e7c-a8ab-ab059f9f4185" name="Default Changelist" comment="Adding notes and comments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.R" beforeDir="false" afterPath="$PROJECT_DIR$/main.R" afterDir="false" />
     </list>
@@ -88,7 +88,7 @@
       <workItem from="1606448146236" duration="52000" />
       <workItem from="1606448235771" duration="754000" />
       <workItem from="1606582770440" duration="1698000" />
-      <workItem from="1606624832811" duration="4413000" />
+      <workItem from="1606624832811" duration="5114000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1605240244912</created>
@@ -153,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606627073633</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Adding notes and comments">
+      <created>1606636888293</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1606636888293</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,7 +186,8 @@
     <MESSAGE value="Class 4 - Confidence interval" />
     <MESSAGE value="Exercise from class 2" />
     <MESSAGE value="Updating exercise from class 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updating exercise from class 2" />
+    <MESSAGE value="Adding notes and comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding notes and comments" />
   </component>
   <component name="WindowStateProjectService">
     <state x="976" y="470" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1606448169838">
@@ -190,10 +198,10 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="789" y="370" key="SettingsEditor/2560.187.1792.1097/0.23.2560.1417@0.23.2560.1417" timestamp="1604543757236" />
-    <state x="765" y="458" key="Vcs.Push.Dialog.v2" timestamp="1606627078159">
+    <state x="765" y="458" key="Vcs.Push.Dialog.v2" timestamp="1606636893763">
       <screen x="0" y="25" width="2560" height="1415" />
     </state>
-    <state x="765" y="458" key="Vcs.Push.Dialog.v2/-2560.25.2560.1415/2560.177.1792.1095/0.25.2560.1415@0.25.2560.1415" timestamp="1606627078159" />
+    <state x="765" y="458" key="Vcs.Push.Dialog.v2/-2560.25.2560.1415/2560.177.1792.1095/0.25.2560.1415@0.25.2560.1415" timestamp="1606636893763" />
     <state x="765" y="441" key="Vcs.Push.Dialog.v2/2560.164.1792.1120/0.0.2560.1440@0.0.2560.1440" timestamp="1606187695141" />
     <state x="765" y="457" key="Vcs.Push.Dialog.v2/2560.187.1792.1097/0.23.2560.1417@0.23.2560.1417" timestamp="1605242885164" />
     <state x="765" y="458" key="Vcs.Push.Dialog.v2/2560.69.2560.1415/0.25.2560.1415@0.25.2560.1415" timestamp="1606292208438" />

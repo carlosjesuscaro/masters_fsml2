@@ -84,11 +84,18 @@ Matrix = matrix(data=rpois(200*1000,5),ncol=200)
 # Calculating the empirical mean row by row. This means that N is composed of
 # 1,000 observations of lambdahat_(n,2)
 N = apply(Matrix, 1, mean)
+# Margin = 1 indicates that the function 'mean' must be applied to the rows
+# (2 would indicate to apply the formula to the columns)
 
 # Histogram of N
 H = hist(N, freq = FALSE)
 # The distrigution looks like a Gaussian. This is expected thanks to the
 # Central Limit Theorem
+# What are the values of the Gaussian distribution:
+H1 = hist(N, plot = FALSE)
+
+# The idea is to determine the Gaissian parameters and then we are going to
+# plot the histogram from the sample data versus the Gaussian distribution
 
 # Values that determine the classes
 limits = H$breaks
@@ -97,6 +104,12 @@ xmin = min(limits)
 # Biggest limit of classes
 xmax = max(limits)
 x = seq(xmin, xmax, 0.01)
-y = dnorm(x, 5, sqrt(5))
+# The Variance of X_bar is lambda / n (n is the number of Poisson RV used to
+# calculate the empirical mean)
+y = dnorm(x, 5, sqrt(5/200))
 ymax = max(y, H$density)
-hist(N, freq = FALSE, xlim = c(xmin, xmax), ylim = c())
+# Plotting the sample data histogram with a super position of the Gaussian
+# distribution with the mu and sigma parameters
+hist(N, freq = FALSE, xlim = c(xmin, xmax), ylim = c(0, ymax))
+par(new = TRUE)
+plot(x,y,type='l',col='red',xlim = c(xmin, xmax), ylim = c(0, ymax))

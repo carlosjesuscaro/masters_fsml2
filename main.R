@@ -121,3 +121,18 @@ plot(x,y,type='l',col='red',xlim = c(xmin, xmax), ylim = c(0, ymax))
 
 # Loading the data
 D1 = read.table('simu1.txt')
+# D1 is a vector with 10,000 values
+
+# Distribution (visual inspection)
+DH1 = hist(D1$V1, freq = FALSE) #Histogram
+# Based on a first visual inspection, it could be a Poisson, Exponential,
+# Chi squared or Gamma distribution. However, it is closer to an Exponential
+# distribution where the key parameter is lambda
+
+# Estimating lambda
+# By definition, the expectation of the mean is 1/lambda. So, lambda_hat will
+# be 1/mean(sample or D1)
+lambda_hat = 1/mean(D1$V1)
+ks.test(D1$V1, 'pexp', lambda_hat)
+# the p-value is 0.5288 which is bigger than alpha (0.05). So we keep H0 ->
+#

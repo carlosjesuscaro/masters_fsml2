@@ -76,7 +76,7 @@ visual <- function(k, n, mu, sig2)
 Z = visual(500000, n, mu, sig2)
 Z$count
 
-# Exercise from class 2
+# Exercise from class 2 PDF (but done in class 4)
 # Matrix with 200 columns and 1,000 rows with data from a Poisson
 # distribution with lambda 5
 Matrix = matrix(data=rpois(200*1000,5),ncol=200)

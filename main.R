@@ -135,4 +135,50 @@ DH1 = hist(D1$V1, freq = FALSE) #Histogram
 lambda_hat = 1/mean(D1$V1)
 ks.test(D1$V1, 'pexp', lambda_hat)
 # the p-value is 0.5288 which is bigger than alpha (0.05). So we keep H0 ->
-#
+# meaning that the sample data comes from the reference distribution
+
+# Building the confidence interval (based on the formula from class4.PDF page 65):
+exp_lowerbound = 1/mean(D1$V1)-1/(sqrt(length(D1$V1))*mean(D1$V1))*qnorm(0.975)
+exp_upperbound = 1/mean(D1$V1)+1/(sqrt(length(D1$V1))*mean(D1$V1))*qnorm(0.975)
+c(exp_lowerbound, exp_upperbound)
+# Results: lowerbound = 3.953059 and upperbpund = 4.111114
+# lambda_hat is 4.032087 which is inside the confidence interval
+
+# Box Muller technique to create artifically a Gaussian distribution
+
+# Dataset 2: simu2.txt
+D2 = read.table('simu2.txt')
+# D2 is a vector with 1,000 values
+
+# Distribution (visual inspection)
+DH2 = hist(D2$V1, freq = FALSE) #Histogram
+# It looks like a Gaussian distribution
+
+# Confidence intervals
+# Expectation
+D2_mu_lowerbound = mean(D2$V1) - var(D2$V1)*qt(0.975, length(D2$V1)-1)/sqrt(length(D2$V1))
+D2_mu_upperbound = mean(D2$V1) + var(D2$V1)*qt(0.975, length(D2$V1)-1)/sqrt(length(D2$V1))
+
+# Variance
+D2_var_lowerbound = (length(D2$V1) - 1)*var(D2$V1)/qchisq(0.975, length(D2$V1)-1)
+D2_var_upperbound = (length(D2$V1) - 1)*var(D2$V1)/qchisq(0.025, length(D2$V1)-1)
+
+# Dataset 3: simu3.txt
+D3 = read.table('simu3.txt')
+# D3 is a vector with 1,000 values
+
+# Distribution (visual inspection)
+DH3 = hist(D3$V1, freq = FALSE) #Histogram
+# It looks like a Gaussian distribution
+
+# Confidence intervals
+# Expectation
+D3_lowerbound = mean(D3$V1) - var(D3$V1)*qt(0.975, length(D3$V1)-1)/sqrt(length(D3$V1))
+D3_upperbound = mean(D3$V1) + var(D3$V1)*qt(0.975, length(D3$V1)-1)/sqrt(length(D3$V1))
+
+# Variance
+D3_var_lowerbound = (length(D3$V1) - 1)*var(D3$V1)/qchisq(0.975, length(D2$V1)-1)
+D3_var_upperbound = (length(D3$V1) - 1)*var(D3$V1)/qchisq(0.025, length(D2$V1)-1)
+
+
+# Indepence test between D2 and D2 (simu2 and simu3)

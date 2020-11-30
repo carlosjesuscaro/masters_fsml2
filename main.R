@@ -185,3 +185,9 @@ D3_var_upperbound = (length(D3$V1) - 1)*var(D3$V1)/qchisq(0.025, length(D2$V1)-1
 c(D3_var_lowerbound, D3_var_upperbound)
 
 # Indepence test between D2 and D2 (simu2 and simu3)
+# Chi square of independence:
+# H0 -> the RVs are independent
+# H1 -> the RVs are dependent
+chisq <- chisq.test(D2$V1, D3$V1)
+# p value = 0.2397
+# sim2 and sim3 are NOT independent

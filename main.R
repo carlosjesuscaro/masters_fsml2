@@ -158,10 +158,12 @@ DH2 = hist(D2$V1, freq = FALSE) #Histogram
 # Expectation
 D2_mu_lowerbound = mean(D2$V1) - var(D2$V1)*qt(0.975, length(D2$V1)-1)/sqrt(length(D2$V1))
 D2_mu_upperbound = mean(D2$V1) + var(D2$V1)*qt(0.975, length(D2$V1)-1)/sqrt(length(D2$V1))
+c(D2_mu_lowerbound, D2_mu_upperbound)
 
 # Variance
 D2_var_lowerbound = (length(D2$V1) - 1)*var(D2$V1)/qchisq(0.975, length(D2$V1)-1)
 D2_var_upperbound = (length(D2$V1) - 1)*var(D2$V1)/qchisq(0.025, length(D2$V1)-1)
+c(D2_var_lowerbound, D2_var_upperbound)
 
 # Dataset 3: simu3.txt
 D3 = read.table('simu3.txt')
@@ -175,10 +177,11 @@ DH3 = hist(D3$V1, freq = FALSE) #Histogram
 # Expectation
 D3_lowerbound = mean(D3$V1) - var(D3$V1)*qt(0.975, length(D3$V1)-1)/sqrt(length(D3$V1))
 D3_upperbound = mean(D3$V1) + var(D3$V1)*qt(0.975, length(D3$V1)-1)/sqrt(length(D3$V1))
+c(D3_mu_lowerbound, D3_mu_upperbound)
 
 # Variance
 D3_var_lowerbound = (length(D3$V1) - 1)*var(D3$V1)/qchisq(0.975, length(D2$V1)-1)
 D3_var_upperbound = (length(D3$V1) - 1)*var(D3$V1)/qchisq(0.025, length(D2$V1)-1)
-
+c(D3_var_lowerbound, D3_var_upperbound)
 
 # Indepence test between D2 and D2 (simu2 and simu3)

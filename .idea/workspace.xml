@@ -19,8 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0eeda32d-3e28-4e7c-a8ab-ab059f9f4185" name="Default Changelist" comment="Kolmogorov-Smirnov test">
-      <change beforePath="$PROJECT_DIR$/.idea/rGraphicsSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rGraphicsSettings.xml" afterDir="false" />
+    <list default="true" id="0eeda32d-3e28-4e7c-a8ab-ab059f9f4185" name="Default Changelist" comment="Confidence intervals for mu and var (D2 and D3)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.R" beforeDir="false" afterPath="$PROJECT_DIR$/main.R" afterDir="false" />
     </list>
@@ -94,7 +93,7 @@
       <workItem from="1606582770440" duration="1698000" />
       <workItem from="1606624832811" duration="7242000" />
       <workItem from="1606678995623" duration="5520000" />
-      <workItem from="1606698180761" duration="2696000" />
+      <workItem from="1606698180761" duration="2889000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1605240244912</created>
@@ -180,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606691015532</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Confidence intervals for mu and var (D2 and D3)">
+      <created>1606705822016</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1606705822016</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,7 +216,8 @@
     <MESSAGE value="Adding notes and comments" />
     <MESSAGE value="Adding 3 datasets for confidence interval calculation" />
     <MESSAGE value="Kolmogorov-Smirnov test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Kolmogorov-Smirnov test" />
+    <MESSAGE value="Confidence intervals for mu and var (D2 and D3)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Confidence intervals for mu and var (D2 and D3)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="976" y="470" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1606448169838">
@@ -221,10 +228,11 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="789" y="370" key="SettingsEditor/2560.187.1792.1097/0.23.2560.1417@0.23.2560.1417" timestamp="1604543757236" />
-    <state x="765" y="458" key="Vcs.Push.Dialog.v2" timestamp="1606691022276">
-      <screen x="0" y="25" width="2560" height="1415" />
+    <state x="536" y="360" key="Vcs.Push.Dialog.v2" timestamp="1606705827490">
+      <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state x="765" y="458" key="Vcs.Push.Dialog.v2/-2560.25.2560.1415/2560.177.1792.1095/0.25.2560.1415@0.25.2560.1415" timestamp="1606691022276" />
+    <state x="536" y="360" key="Vcs.Push.Dialog.v2/0.25.1792.1095@0.25.1792.1095" timestamp="1606705827490" />
     <state x="765" y="441" key="Vcs.Push.Dialog.v2/2560.164.1792.1120/0.0.2560.1440@0.0.2560.1440" timestamp="1606187695141" />
     <state x="765" y="457" key="Vcs.Push.Dialog.v2/2560.187.1792.1097/0.23.2560.1417@0.23.2560.1417" timestamp="1605242885164" />
     <state x="765" y="458" key="Vcs.Push.Dialog.v2/2560.69.2560.1415/0.25.2560.1415@0.25.2560.1415" timestamp="1606292208438" />

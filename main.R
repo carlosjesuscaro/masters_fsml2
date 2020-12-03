@@ -199,8 +199,8 @@ chisq <- chisq.test(D2$V1, D3$V1)
 sample1 = rnorm(20,0,1)
 sample2 = rnorm(25,0, sqrt(1.5))
 # Defining the confidence intervals
-sam_lower = (var(sample1)/var(sample2))/qf(0.95, length(sample1)-1, length(sample2)-1)
-sam_upper = (var(sample1)/var(sample2))/qf(0.05, length(sample1)-1, length(sample2)-1)
+sam_lower = (var(sample1)/var(sample2))/qf(0.95/2, length(sample1)-1, length(sample2)-1)
+sam_upper = (var(sample1)/var(sample2))/qf(0.05/2, length(sample1)-1, length(sample2)-1)
 # Building the confidence interval vector
 c(sam_lower, sam_upper)
 # Comparing the sample ratio between the empirical variances
@@ -210,8 +210,8 @@ var(sample1)/var(sample2)
 sample1 = rnorm(20,0,1)
 sample2 = rnorm(25,0, sqrt(1.5))
 # Defining the confidence intervals
-sam_lower = (var(sample1)/var(sample2))/qf(0.95, length(sample1)-1, length(sample2)-1)
-sam_upper = (var(sample1)/var(sample2))/qf(0.05, length(sample1)-1, length(sample2)-1)
+sam_lower = (var(sample1)/var(sample2))/qf(0.95/2, length(sample1)-1, length(sample2)-1)
+sam_upper = (var(sample1)/var(sample2))/qf(0.05/2, length(sample1)-1, length(sample2)-1)
 # Building the confidence interval vector
 c(sam_lower, sam_upper)
 # Comparing the sample ratio between the empirical variances
@@ -224,9 +224,12 @@ confvar <- function(n,m,sig1, sig2, alpha)
   Y = rnorm(n,0,sqrt(sig2))
   sighat1 = var(X)
   sighat2 = var(Y)
-  f1 = qf(1-alpha, n-1, m-1)
-  f2 = qf(alpha, n-1, m-1)
+  f1 = qf(1-alpha/2, n-1, m-1)
+  f2 = qf(alpha/2, n-1, m-1)
   confvar = c(sighat1/sighat2*1/f1, sighat1/sighat2*1/f2)
 }
 
 confidence = confvar(500,500,1,1.5,0.05)
+
+# The main conclusion is that if 1 is not within the confidence interval, then we cannot
+# assume at all the var1 is equal to var2

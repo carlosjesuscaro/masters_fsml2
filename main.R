@@ -195,6 +195,18 @@ chisq <- chisq.test(D2$V1, D3$V1)
 # Class 5
 ####################
 # Defining the rrandom Gaussian RVs
+# a) n = 20 and m = 25
+sample1 = rnorm(20,0,1)
+sample2 = rnorm(25,0, sqrt(1.5))
+# Defining the confidence intervals
+sam_lower = (var(sample1)/var(sample2))/qf(0.95, length(sample1)-1, length(sample2)-1)
+sam_upper = (var(sample1)/var(sample2))/qf(0.05, length(sample1)-1, length(sample2)-1)
+# Building the confidence interval vector
+c(sam_lower, sam_upper)
+# Comparing the sample ratio between their variances
+var(sample1)/var(sample2)
+
+# b) n = 500 and m = 500
 sample1 = rnorm(20,0,1)
 sample2 = rnorm(25,0, sqrt(1.5))
 # Defining the confidence intervals

@@ -233,3 +233,22 @@ confidence = confvar(500,500,1,1.5,0.05)
 
 # The main conclusion is that if 1 is not within the confidence interval, then we cannot
 # assume at all the var1 is equal to var2
+
+# Final exam
+a = seq(0,10,0.1)
+b = seq(0,10,0.1)
+x = seq(0,10,0.1)
+fabx = a*b^a/x^(a+1)*(x >= b)
+plot(x, fabx)
+
+U = runif(100)
+hist(U, freq = FALSE)
+X = b / U^(1/a)
+plot(b, X)
+hist(U, freq = FALSE)
+
+# Exercise 5
+pnorm(2.41, 2, sqrt(0.01))
+pnorm(1.82, 2, sqrt(0.01))
+pnorm(1.72, 2, sqrt(0.01))
+pnorm(2.04, 2, sqrt(0.01)) - pnorm(1.92, 2, sqrt(0.01))

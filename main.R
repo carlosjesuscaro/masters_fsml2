@@ -30,10 +30,12 @@ table(A)
 
 # From class problem
 x = seq(-1,5, 0.01)
+# Plotting the distribution function
 fx = 0*(x<0)+x^2/8*(x>=0)*(x<2)+(-x^2/8+x-1)*(x>=2)*(x<4)+1*(x>=4)
 plot(x,fx,type='l',col='red')
 
 u = runif(500000)
+# Plotting the density function
 Y = (8*u)^0.5*(u<=0.5)+(4-(8-8*u)^0.5)*(u>1/2)
 min(Y)
 max(Y)
@@ -235,20 +237,36 @@ confidence = confvar(500,500,1,1.5,0.05)
 # assume at all the var1 is equal to var2
 
 # Final exam
-a = seq(0,10,0.1)
-b = seq(0,10,0.1)
-x = seq(0,10,0.1)
-fabx = a*b^a/x^(a+1)*(x >= b)
-plot(x, fabx)
+# From class problem
+x = seq(-1,5, 0.01)
+# Plotting the distribution function
+fx = 0*(x<0)+x^2/8*(x>=0)*(x<2)+(-x^2/8+x-1)*(x>=2)*(x<4)+1*(x>=4)
+plot(x,fx,type='l',col='red')
 
-U = runif(100)
-hist(U, freq = FALSE)
-X = b / U^(1/a)
-plot(b, X)
-hist(U, freq = FALSE)
+u = runif(500000)
+# Plotting the density function
+Y = (8*u)^0.5*(u<=0.5)+(4-(8-8*u)^0.5)*(u>1/2)
+min(Y)
+max(Y)
+hist(Y, freq = FALSE, breaks = 50)
+# Exercise 4
+a = 5
+b = 20
+x = seq(0,100)
+# Density function
+fabx = a*b^a/x^(a+1)*1*(x >= b)
+hist(fabx, freq = FALSE)
+# Distribution function
+Fx = b^a/x^a*(x>=b)
+plot(x,1-Fx,type='l',col = 'red', main = 'Distribution function Fab')
+
+U = runif(100, 0, 1)
+X = b/U^(1/a)
+plot(U, 1 -X, type = 'l', col = 'red', main = 'X Distribution')
 
 # Exercise 5
 pnorm(2.41, 2, sqrt(0.01))
 pnorm(1.82, 2, sqrt(0.01))
 pnorm(1.72, 2, sqrt(0.01))
 pnorm(2.04, 2, sqrt(0.01)) - pnorm(1.92, 2, sqrt(0.01))
+

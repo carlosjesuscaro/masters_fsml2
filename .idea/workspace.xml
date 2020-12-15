@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0eeda32d-3e28-4e7c-a8ab-ab059f9f4185" name="Default Changelist" comment="Class 5 - Fisher confidence - additional comments">
+    <list default="true" id="0eeda32d-3e28-4e7c-a8ab-ab059f9f4185" name="Default Changelist" comment="Final Exam - Exercise 5">
       <change beforePath="$PROJECT_DIR$/.idea/rGraphicsSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rGraphicsSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.R" beforeDir="false" afterPath="$PROJECT_DIR$/main.R" afterDir="false" />
@@ -100,7 +100,9 @@
       <workItem from="1606961948938" duration="2644000" />
       <workItem from="1607603803599" duration="508000" />
       <workItem from="1607608707921" duration="2958000" />
-      <workItem from="1607655850784" duration="1227000" />
+      <workItem from="1607655850784" duration="1811000" />
+      <workItem from="1608005727563" duration="2730000" />
+      <workItem from="1608009246075" duration="3008000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1605240244912</created>
@@ -235,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606975244466</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Final Exam - Exercise 5">
+      <created>1607660143533</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1607660143533</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,39 +281,7 @@
     <MESSAGE value="Class 5 - Fisher confidence interval Case B" />
     <MESSAGE value="Class 5 - Fisher confidence interval w/ functions" />
     <MESSAGE value="Class 5 - Fisher confidence - additional comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Class 5 - Fisher confidence - additional comments" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="976" y="470" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1607603811601">
-      <screen x="0" y="25" width="2560" height="1415" />
-    </state>
-    <state x="976" y="470" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-2560.25.2560.1415/2560.177.1792.1095/0.25.2560.1415@0.25.2560.1415" timestamp="1606448169838" />
-    <state x="976" y="470" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-2560.25.2560.1415/2560.232.1792.1095/0.25.2560.1415@0.25.2560.1415" timestamp="1607603811601" />
-    <state x="789" y="370" key="SettingsEditor" timestamp="1604543757236">
-      <screen x="0" y="23" width="2560" height="1417" />
-    </state>
-    <state x="789" y="370" key="SettingsEditor/2560.187.1792.1097/0.23.2560.1417@0.23.2560.1417" timestamp="1604543757236" />
-    <state x="765" y="458" key="Vcs.Push.Dialog.v2" timestamp="1606975248070">
-      <screen x="0" y="25" width="2560" height="1415" />
-    </state>
-    <state x="765" y="458" key="Vcs.Push.Dialog.v2/-2560.25.2560.1415/2560.177.1792.1095/0.25.2560.1415@0.25.2560.1415" timestamp="1606708660321" />
-    <state x="765" y="458" key="Vcs.Push.Dialog.v2/-2560.25.2560.1415/2560.223.1792.1095/0.25.2560.1415@0.25.2560.1415" timestamp="1606975248070" />
-    <state x="536" y="360" key="Vcs.Push.Dialog.v2/0.25.1792.1095@0.25.1792.1095" timestamp="1606706044800" />
-    <state x="765" y="441" key="Vcs.Push.Dialog.v2/2560.164.1792.1120/0.0.2560.1440@0.0.2560.1440" timestamp="1606187695141" />
-    <state x="765" y="457" key="Vcs.Push.Dialog.v2/2560.187.1792.1097/0.23.2560.1417@0.23.2560.1417" timestamp="1605242885164" />
-    <state x="765" y="458" key="Vcs.Push.Dialog.v2/2560.69.2560.1415/0.25.2560.1415@0.25.2560.1415" timestamp="1606292208438" />
-    <state width="1280" height="708" key="XDebugger.FullValuePopup" timestamp="1606628880613">
-      <screen x="0" y="25" width="2560" height="1415" />
-    </state>
-    <state width="1280" height="708" key="XDebugger.FullValuePopup/-2560.25.2560.1415/2560.177.1792.1095/0.25.2560.1415@0.25.2560.1415" timestamp="1606628880613" />
-    <state width="1280" height="708" key="XDebugger.FullValuePopup/2560.187.1792.1097/0.23.2560.1417@0.23.2560.1417" timestamp="1605237087250" />
-    <state x="697" y="490" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606706022535">
-      <screen x="0" y="25" width="1792" height="1095" />
-    </state>
-    <state x="697" y="490" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1792.1095@0.25.1792.1095" timestamp="1606706022535" />
-    <state x="940" y="613" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1605240186081">
-      <screen x="0" y="23" width="2560" height="1417" />
-    </state>
-    <state x="940" y="613" key="git4idea.remote.GitConfigureRemotesDialog/2560.187.1792.1097/0.23.2560.1417@0.23.2560.1417" timestamp="1605240186081" />
+    <MESSAGE value="Final Exam - Exercise 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final Exam - Exercise 5" />
   </component>
 </project>

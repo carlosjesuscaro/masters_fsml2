@@ -249,20 +249,21 @@ Y = (8*u)^0.5*(u<=0.5)+(4-(8-8*u)^0.5)*(u>1/2)
 min(Y)
 max(Y)
 hist(Y, freq = FALSE, breaks = 50)
+
 # Exercise 4
 a = 5
 b = 20
-x = seq(0,100)
+x = seq(0,100, 0.01)
 # Density function
 fabx = a*b^a/x^(a+1)*1*(x >= b)
-hist(fabx, freq = FALSE)
+hist(fabx, freq = FALSE, main = 'Density function fab')
 # Distribution function
 Fx = b^a/x^a*(x>=b)
 plot(x,1-Fx,type='l',col = 'red', main = 'Distribution function Fab')
 
-U = runif(100, 0, 1)
-X = b/U^(1/a)
-plot(U, 1 -X, type = 'l', col = 'red', main = 'X Distribution')
+u = runif(100)
+Y = b/(u)^(1/a)
+hist(Y, type = 'l', col = 'red', main = 'Density function fx(u)')
 
 # Exercise 5
 pnorm(2.41, 2, sqrt(0.01))

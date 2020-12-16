@@ -19,12 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0eeda32d-3e28-4e7c-a8ab-ab059f9f4185" name="Default Changelist" comment="Final Exam - Exercise 4">
-      <change afterPath="$PROJECT_DIR$/Rplot01.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/rGraphicsSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rGraphicsSettings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.R" beforeDir="false" afterPath="$PROJECT_DIR$/main.R" afterDir="false" />
-    </list>
+    <list default="true" id="0eeda32d-3e28-4e7c-a8ab-ab059f9f4185" name="Default Changelist" comment="Final Exam - Exercise 4c" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,7 +100,7 @@
       <workItem from="1608005727563" duration="2730000" />
       <workItem from="1608009246075" duration="3256000" />
       <workItem from="1608045741001" duration="2559000" />
-      <workItem from="1608071835529" duration="1735000" />
+      <workItem from="1608071835529" duration="2312000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1605240244912</created>
@@ -254,7 +249,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608012992746</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Final Exam - Exercise 4c">
+      <created>1608081351281</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1608081351281</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Final Exam - Exercise 4c">
+      <created>1608081372440</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1608081372440</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,6 +302,7 @@
     <MESSAGE value="Class 5 - Fisher confidence - additional comments" />
     <MESSAGE value="Final Exam - Exercise 5" />
     <MESSAGE value="Final Exam - Exercise 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final Exam - Exercise 4" />
+    <MESSAGE value="Final Exam - Exercise 4c" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final Exam - Exercise 4c" />
   </component>
 </project>
